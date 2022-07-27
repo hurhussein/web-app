@@ -1,0 +1,106 @@
+body {
+    background-image: linear-gradient(to right,#eeaeca, #5386c2);
+    display: grid;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #254b80;
+  }
+  
+  li {
+    float: left;
+  }
+
+  li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover, .dropdown:hover .dropbtn {
+    background-color: #4386e6;
+  }
+  
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+ .dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+    h1 {
+    color: #254b80;
+    font-size: 50px;
+    padding: 13px 0;
+}
+
+p {
+    color: white;
+    font-size: 35px;
+    line-height: 1.8;
+}
+.container {
+    display: flex;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+.info {
+    display: grid;
+    text-align: center;
+    padding: initial;
+    margin-top: 300px;
+    margin-left: 30px;
+}
+.hotels pic {
+    display: grid;
+    text-align: center;
+    padding:10px;
+    margin-top: 70px;
+}
+
+.btn a{
+    border: none;
+    outline: none;
+    background: #254B80;
+    padding: 10px 30px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    margin: 10px auto;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+    .btn a:hover {
+        background-color: #4386E6;
+    }
