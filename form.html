@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <title>Form</title>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="HTML">
+    <style>
+        body { 
+              background-image: linear-gradient(to right,#eeaeca, #5386c2);
+              font-size: 30PX;
+        }
+
+        h2{
+            align-items: center;
+            color: #254b80;
+    
+        }
+
+        input[type="text"], select, textarea{
+            width: 40%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+
+        label{
+            padding: 12px 12px 12px 0;
+            display: inline-block;
+        }
+
+        input[type=submit] {
+            background-color: #254b80;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            outline: none;
+            display: inline-block;
+        }
+
+        input[type=submit]:hover {
+             background-color:  #4386e6;
+        }
+
+        input[type=reset]{
+            background-color: #254b80;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            outline: none;
+            display: inline-block;
+        }
+
+        input[type=reset]:hover {
+             background-color:  #4386e6;
+        }
+
+        .Booking {
+            border-radius: 20px;
+            background-image: linear-gradient(to right,#eeaeca, #5386c2);
+            padding: 20px;
+            color: #254b80;
+        }
+
+        .col-1 {
+            float: left;
+            width: 75%;
+            margin-top: 2px;
+        }
+
+        .col-2 {
+            float: left;
+            width: 75%;
+            margin-top: 2px;
+        }
+
+        .row::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+    </style>  
+ </head>
+ <body>
+        <h2>Reservation</h2>
+        <div class="Booking">
+            <form class="form">
+                <div class="row">
+                    <div class="col-1">
+                        <label for="fname">First Name</label>
+                    </div>
+                    <div class="col-2">
+                        <input type="text" class="form-control" placeholder="your Name" >
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-1">
+                        <label for="lname">Last Name</label>
+                    </div>
+                    <div class="col-2">
+                        <input type="text" class="form-control" placeholder="your Last Name ">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-1">
+                        <label for="phnumber">your Phone Number</label>
+                    </div>
+                    <div class="col-2">
+                        <input type="number"  placeholder="Phone Number">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-1">
+                        <label for="email">E-mail</label>
+                    </div>
+                    <div class="col-2">
+                        <input type="email" placeholder="E-mail">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-1">
+                        <label for="national identification">National ID</label>
+                    </div>
+                    <div class="col-2">
+                        <input type="number" placeholder="ID">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-1">
+                        <label for="cointry">Country</label>
+                    </div>
+                    <div class="col-2">
+                        <select name="country">
+                            <option value="country"></option>
+                            <option value="maldive">Maldives</option>
+                            <option value="egypt">Egypt</option>
+                            <option value="china">China</option>
+                            <option value="greece">Greece</option>
+                            <option value="frane">France</option>
+                            <option value="indonesia">Indonesia</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-2">
+                        <label for="feedback">FeedBack</label>
+                    </div>
+                    <div class="col-2">
+                        <textarea name="feedback"  placeholder="Write a Suggestion" style="height:200px"></textarea>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <input type="submit" value="submit" style="height:50px; width:50pxx" />
+                    <input type="reset"  value="Reset">
+                </div>
+            </form>
+        </div>
+ </body>
+</html>
+
